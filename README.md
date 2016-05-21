@@ -10,10 +10,12 @@ These scripts come from https://github.com/mathiasbynens/dotfiles, I've just sim
 
 ## Setup
 
-Check if you have a `.bash_profile` file in your home directory already. If so, I'd recommend saving your local `.bash_profile` as say `.bash_profile_local`, cloning this repo into your home directory and then moving anything from your `.bash_profile_local` you want to keep to to the `.bash_profile` from the repo.   
+1. Clone this repo anywhere on your machine.
 
-If not, just clone this repo to your home directory and you're good to go! 
+2. Check if you have a `.bash_profile` file in your home directory already. If so, move anything you want to keep from your existing `.bash_profile` file to the `.bash_profile` file from the repo. Rename your local `.bash_profile` to something like `.bash_profile_old` to keep a backup just in case.
 
-You might have to source the `.bash_profile` file (`. ~/.bash_profile`) and restart any open command line sessions for the changes to kick in. 
+3. Move all the dot files from this repo to your home directory.
+
+4. Source the new `.bash_profile` file by running `. ~/.bash_profile`. You might have to restart any open command line sessions for the changes to kick in. 
 
 I've used these files on a Mac (10.11.5, with Terminal and iTerm) and Ubuntu (16.04, with Terminal and Terminator). No idea how they'd behave on Windows!
