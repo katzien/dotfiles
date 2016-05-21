@@ -14,6 +14,6 @@ Check if you have a `.bash_profile` file in your home directory already. If so, 
 
 If not, just clone this repo to your home directory and you're good to go! 
 
-You might have to source the .bash_profile file (`. ~/.bash_profile`) and restart any open command line sessions for the changes to kick in. 
+You might have to source the `.bash_profile` file (`. ~/.bash_profile`) and restart any open command line sessions for the changes to kick in. 
 
 I've used these files on a Mac (10.11.5, with Terminal and iTerm) and Ubuntu (16.04, with Terminal and Terminator). No idea how they'd behave on Windows!
