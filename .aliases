@@ -9,6 +9,8 @@ alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
 alias mkdir="mkdir -p"
 alias reload!="source ~/.bash_profile"
+alias ipme="ipconfig getifaddr en0"
+alias show80="sudo lsof -iTCP -sTCP:LISTEN -Pnl | grep :80"
 
 # Git
 alias g="git"
@@ -35,6 +37,10 @@ alias d='docker'
 alias dc='docker-compose'
 alias dm='docker-machine'
 alias dsa='docker stop $(docker ps -a -q)' # Docker stop all containers
+
+# Go
+alias cover='go test -coverprofile=coverage.out && go tool cover -html=coverage.out'
+alias test='go test $(go list ./... | grep -v /vendor/)'
 
 # List all files colorized in long format
 alias l="ls -lF -G"
