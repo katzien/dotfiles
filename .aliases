@@ -30,6 +30,9 @@ alias gadd="git add"
 alias gaa="git add -A"
 alias gpo="git push origin -u"
 
+# Checksums (for mac)
+alias sha256="openssl dgst -sha256"
+
 # Prettify JSON from clipboard
 alias jsonpp='pbpaste | json_pp | pbcopy'
 
