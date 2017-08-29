@@ -1,7 +1,9 @@
 [alias]
 
 	# View abbreviated SHA, description, and history graph of the latest 20 commits
-	l = log --pretty=oneline -n 20 --graph --abbrev-commit
+	l = log --pretty=oneline -n 20 --graph --abbrev-commit --date=local
+	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%C(bold blue)<%an>%Creset' --abbrev-commit
+   	who = log --graph -10 --branches --remotes --tags --format=format:'%Cgreen%h %Creset• %<(65,trunc)%s (%cN, %cr) %Cred%d' --date-order
 
 	# View the current working tree status using the short format
 	s = status
@@ -27,6 +29,8 @@
 	# Show verbose output about tags, branches or remotes
 	tags = tag -l
 	branches = branch -a
+	br = branch
+	lbr = branch -l
 	remotes = remote -v
 
 	# Amend the currently staged files to the latest commit
@@ -59,6 +63,17 @@
 
 	# List contributors with number of commits
 	contributors = shortlog --summary --numbered
+	
+	# Stashes and aborting
+  	stashes = stash list
+  	unstage = reset -q HEAD --
+  	discard = checkout --
+	
+	# Reverting 
+  	uncommit = reset --mixed HEAD~
+	
+	# Precommit 
+  	precommit = diff --cached --diff-algorithm=minimal -w
 
 [color "branch"]
 	current = yellow reverse
