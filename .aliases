@@ -29,6 +29,7 @@ alias gca="git commit -a"
 alias gadd="git add"
 alias gaa="git add -A"
 alias gpo="git push origin -u"
+alias grhh="git reset --hard HEAD"
 
 # Checksums (for mac)
 alias sha256="openssl dgst -sha256"
