@@ -69,10 +69,3 @@ alias httpdump="sudo tcpdump -i en1 -n -s 0 -w - | grep -a -o -E \"Host\: .*|GET
 # Recursively delete `.DS_Store` files
 alias cleanup="find . -type f -name '*.DS_Store' -ls -delete"
 
-# Mac stuff
-alias show_dot_files='defaults write com.apple.finder AppleShowAllFiles TRUE'
-alias hide_dot_files='defaults write com.apple.finder AppleShowAllFiles FALSE'
-alias turn_animation_off='defaults write com.apple.dock workspaces-swoosh-animation-off -bool YES && killall Dock'
-alias turn_animation_on='defaults write com.apple.dock workspaces-swoosh-animation-off -bool NO && killall Dock'
-alias show_spotlight_icon='sudo chmod 755 /System/Library/CoreServices/Search.bundle/Contents/MacOS/Search && killall SystemUIServer'
-alias hide_spotlight_icon='sudo chmod 600 /System/Library/CoreServices/Search.bundle/Contents/MacOS/Search && killall SystemUIServer'
