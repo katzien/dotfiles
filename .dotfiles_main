@@ -1,0 +1,16 @@
+# most of these files are taken from
+# https://github.com/mathiasbynens/dotfiles and adjusted
+
+dotfiles_dir=~/dotfiles
+
+if [ -f ${dotfiles_dir}/.aliases ]; then
+  . ${dotfiles_dir}/.aliases
+fi
+
+if [ -f ${dotfiles_dir}/.git-completion.bash ]; then
+  . ${dotfiles_dir}/.git-completion.bash
+fi
+
+if [ -f ${dotfiles_dir}/.bash_prompt ]; then
+  . ${dotfiles_dir}/.bash_prompt
+fi
