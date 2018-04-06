@@ -7,6 +7,7 @@ This is a collection of dot files I use on my laptops, which set up useful comma
 
 ## Not invented here
 This repo was inspired by https://github.com/mathiasbynens/dotfiles. 
+
 The `.vimrc` file was inspired by [Gary Bernhardt's
 .vimrc](https://github.com/garybernhardt/dotfiles/blob/master/.vimrc).
 
