@@ -6,7 +6,9 @@ This is a collection of dot files I use on my laptops, which set up useful comma
  - git branch completion in your terminal  
 
 ## Not invented here
-These scripts come from https://github.com/mathiasbynens/dotfiles, I've just simplified and adjusted some of them. 
+This repo was inspired by https://github.com/mathiasbynens/dotfiles. 
+The `.vimrc` file was inspired by [Gary Bernhardt's
+.vimrc](https://github.com/garybernhardt/dotfiles/blob/master/.vimrc).
 
 ## Setup
 
@@ -25,3 +27,10 @@ fi
 ```
 
 5. Source your `.bash_profile` file by running `. ~/.bash_profile`. You might have to restart any open command line sessions for the changes to kick in. 
+
+6. To load the `.vimrc` file, create a symlink from your home directory called `.vimrc` pointing to `~/dotfiles/.vimrc` (adjust the path to your dotfiles directory if necessary).
+
+e.g.
+```
+ln -s /Users/kat/dotfiles/.vimrc /Users/kat/.vimrc
+```
