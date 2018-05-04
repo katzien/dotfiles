@@ -12,6 +12,9 @@ alias reload!="source ~/.bash_profile"
 alias ipme="ipconfig getifaddr en0"
 alias show80="sudo lsof -iTCP -sTCP:LISTEN -Pnl | grep :80"
 
+# Lolz
+alias tmuch="tmux"
+
 # Git
 alias g="git"
 alias gb="git branch"
